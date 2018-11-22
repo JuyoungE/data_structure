@@ -102,6 +102,20 @@ I annotated each code of file.
 	   			towers(1, source, dest, auxilary);
 	    			towers(n - 1, auxiliary, dest, source); } // if else }	// towers
 				
+## Pointers
+### Pointer
+	- A data type whose value is used to refer to ("points to") another value stored elsewhere in the computer memory
+### Pointer-related operators
+	- Address operator &
+	- Dereferencing operator *
+## Structures
+### Structure
+	- collection of related elements, possibly of different types
+## Referencing individual fields
+	- Direct selection operator (.)
+	- Indirect selection operator (->)
+
+	
 
 
 	
