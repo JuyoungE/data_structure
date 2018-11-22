@@ -85,8 +85,23 @@ I annotated each code of file.
 		
 	if문 : 조건문이란 프로그래머가 명시한 불린 자료형 조건이 참인지 거짓인지에 따라 달라지는 계산이나 상황을 수행
 	       if의 조건이 참이 아닐 때 수행할 동작은 else 문에서 지정 가능, if와 else 사이에 else if를 통해 새로운 조건을 넣을 수 있음
-## 함수
+## 사용한 함수들
 	rand() : 0 이상 1 미만의 실수인 난수를 반환
+
+## Recursion
+	-Less intuitive
+	-Suitable for problem breaking-down
+	-Many algorithms are drastically simplified by recursion
+	
+	example)
+		void towers (int n, char source, char dest, char auxiliary){
+			if (n == 1)	// base case
+	    			printf("Move from %c to %c\n", source, dest);
+			else {		// general case
+	    			towers(n - 1, source, auxiliary, dest);
+	   			towers(1, source, dest, auxilary);
+	    			towers(n - 1, auxiliary, dest, source); } // if else }	// towers
+				
 
 
 	
