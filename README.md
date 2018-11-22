@@ -108,12 +108,32 @@ I annotated each code of file.
 ### Pointer-related operators
 	- Address operator &
 	- Dereferencing operator *
+
 ## Structures
 ### Structure
 	- collection of related elements, possibly of different types
-## Referencing individual fields
+### Referencing individual fields
 	- Direct selection operator (.)
 	- Indirect selection operator (->)
+
+## Linear Lists
+### Linear lists
+	- typedef struct node {
+		void *dataPtr;
+		struct node* link;} NODE;
+
+	  NODE* createNode (void* itemPtr);
+	  
+	  NODE* createNode (void* itemPtr){
+		NODE* nodePtr = NULL;
+		nodePtr = (NODE*) malloc (sizeof (NODE));
+		nodePtr->dataPtr = itemPtr;
+		nodePtr->link    = NULL;
+		return nodePtr;}	// createNode 
+
+
+
+
 
 	
 
